@@ -74,6 +74,7 @@ public class cwh_38_custom_class {
         // Printing the Attributes
         harry.printDetails();
         john.printDetails();
+        
         int salary = john.getSalary();
         System.out.println(salary);
         // System.out.println(harry.id);
