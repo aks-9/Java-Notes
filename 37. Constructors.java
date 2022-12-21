@@ -1,31 +1,31 @@
-// Constructors in Java
+//* Constructors in Java
 
 /*
 
-Constructors in Java : 
+? Constructors in Java : 
 
-Constructors are similar to methods,, but they are used to initialize an object.
-Constructors do not have any return type(not even void).
+- Constructors are similar to methods, but they are used to initialize an object.
+- Constructors do not have any return type(not even void).
+- Every time we create an object by using the new() keyword, a constructor is called.
+- If we do not create a constructor by ourself, then the default constructor(created by Java compiler) is called.
 
-Every time we create an object by using the new() keyword, a constructor is called.
 
-If we do not create a constructor by ourself, then the default constructor(created by Java compiler) is called.
-
-Rules for creating a Constructor :
-
+? Rules for creating a Constructor :
 1. The class name and constructor name should be the same.
 2. It must have NO explicit return type.
 3. It can not be abstract, static, final, and synchronized.
 
 
-Types of Constructors in Java :
+? Types of Constructors in Java :
 There are two types of constructors in Java :
 
-Defaut constructor : A constructor with 0 parameters is known as default constructor.
+* 1. Default constructor : 
+A constructor with 0 parameters is known as default constructor.
 
 Syntax :
+
 <class_name>(){
-//code to be executed on the execution of the constructor
+/// code to be executed on the execution of the constructor
 }  
 
 Example :
@@ -45,14 +45,16 @@ public class CWH_constructors {
 Output :
 
 This is the default constructor of CWH class.
+
 In the above code, CWH() is the constructor of class CWH The CWH() constructor is invoked automatically with the creation of object ob1.
 
-Paramerterized constructor : A constructor with some specified number of parameters is known as a parameterized constructor.
+* 2. Parameterized constructor : 
+A constructor with some specified number of parameters is known as a parameterized constructor.
 
 Syntax :
 
 <class-name>(<data-type> param1, <data-type> param2,......){
-//code to be executed on the invocation of the constructor
+/// code to be executed on the invocation of the constructor
 }
 
 Example :
@@ -75,7 +77,8 @@ Output :
 
 In the above example, CWH() constructor accepts two parameters i.e., string s and int b.
 
-Constructor Overloading in Java :
+? Constructor Overloading in Java :
+
 Just like methods, constructors can also be overloaded in Java. We can overload the Employe constructor like below: 
 
 public Employee (String n)
@@ -84,8 +87,8 @@ public Employee (String n)
 
 Note:
 
-1. Constructors can take parameters without being overloaded 
-2. There can be more than two overloaded constructors 
+* 1. Constructors can take parameters without being overloaded 
+* 2. There can be more than two overloaded constructors 
 
 Let's take an example to understand the concept of constructor overloading. 
 
@@ -94,12 +97,14 @@ Example :
 In the below example, the class Employee has a constructor named Employee(). It takes two argument,i.e., string s & int i. The same constructor is overloaded and then it accepts three arguments i.e., string s, int i & int salary. 
 
 class Employee {
-// First constructor
+
+/// First constructor
     Employee(String s, int i){
         System.out.println("The name of the first employee is : " + s);
         System.out.println("The id of the first employee is : " + i);
     }
-//    Constructor overloaded
+    
+///   Constructor overloaded
     Employee(String s, int i, int salary){
         System.out.println("The name of the second employee is : " + s);
         System.out.println("The id of the second employee is : " + i);
