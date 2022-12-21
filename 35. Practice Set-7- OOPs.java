@@ -9,16 +9,6 @@ name (property) (String)
 getName (method returning String)
 setName (method changing name)
 
-2. Create a class cellphone with methods to print “ringing…”, “vibrating…”, etc.
-
-3. Create a class Square with a method to initialize its side, calculating area, perimeter etc.
-
-4. Create a class Rectangle & problem 3.
-
-5. Create a class TommyVecetti for Rockstar Games capable of hitting (print hitting…), running, firing, etc.
-
-6. Repeat problem 4 for a circle.
-
 */
 
 
@@ -39,6 +29,13 @@ class Employee{
     }
 }
 
+/*
+
+2. Create a class cellphone with methods to print “ringing…”, “vibrating…”, etc.
+
+*/
+
+
 class CellPhone{
     public void ring(){
         System.out.println("Ringing...");
@@ -52,6 +49,12 @@ class CellPhone{
 
 }
 
+/*
+
+3. Create a class Square with a method to initialize its side, calculating area, perimeter etc.
+
+*/
+
 class Square{
     int side;
     public int area(){
@@ -61,6 +64,12 @@ class Square{
         return 4*side;
     }
 }
+
+/*
+
+5. Create a class Tommy for Rockstar Games capable of hitting (print hitting…), running, firing, etc.
+
+*/
 
 class Tommy{
     public void hit(){
@@ -73,31 +82,38 @@ class Tommy{
         System.out.println("Firing on the enemy");
     }
 }
+
+/*
+
+6. Repeat problem 4 for a circle.
+
+*/
+
 public class cwh_39_ch8ps {
     public static void main(String[] args) {
         /*
-        // Problem 1
+        //* Problem 1
         Employee harry = new Employee();
         harry.setName("CodeWithHarry");
         harry.salary = 233;
         System.out.println(harry.getSalary());
         System.out.println(harry.getName());
 
-        // Problem 2
+        //* Problem 2
         CellPhone asus = new CellPhone();
         asus.callFriend();
         asus.vibrate();
         //asus.ring();
 
 
-        // Problem 3
+        //* Problem 3
         Square sq = new Square();
         sq.side = 3;
         System.out.println(sq.area());
         System.out.println(sq.perimeter());
          */
 
-        // Problem 5
+        //* Problem 5
         Tommy player1 = new Tommy();
         player1.fire();
         player1.run();
