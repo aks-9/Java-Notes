@@ -1,44 +1,6 @@
-/*
+//* Practice Questions on Java Methods
 
-Practice Questions on Java Methods
-
-1. Write a Java method to print the multiplication table of a number n.
-
-2.Write a program using functions to print the following pattern:
-      *
-
-     **
-
-    ***
-
-   ****
-
-
-3. Write a recursive function to calculate the sum of first n natural numbers.
-
-4. Write a function to print the following pattern:
-    ****
-
-    ***
-
-    **
-
-    *
-
-5. Write a function to print the nth term of the Fibonacci series using recursion.
-
-6. Write a function to find the average of a set of numbers passed as arguments.
-
-7. Repeat problem 4 using Recursion.
-
-8. Repeat problem 2 using Recursion.
-
-9. Write a function to convert Celsius temperature into Fahrenheit.
-
-10. Repeat problem 3 using an iterative approach.
-
-*/
-
+// 1. Write a Java method to print the multiplication table of a number n.
 
 package com.company;
 
@@ -49,6 +11,19 @@ public class cwh_35_practice_set_on_methods {
         }
     }
 
+/*
+
+2.Write a program using functions to print the following pattern:
+
+      *
+
+     **
+
+    ***
+
+   ****
+
+*/
     static void pattern1(int n) {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < i + 1; j++) {
@@ -57,6 +32,7 @@ public class cwh_35_practice_set_on_methods {
             System.out.println();
         }
     }
+
 
     static void pattern1_rec(int n) {
         if (n > 0) {
@@ -67,11 +43,25 @@ public class cwh_35_practice_set_on_methods {
             System.out.println();
         }
     }
+
+/*
+    4. Write a function to print the following pattern:
+    ****
+
+    ***
+
+    **
+
+    *
+
+*/
+
     // pattern1_rec(3)
     // pattern1_rec(2) + 3 times star and new line
     // pattern1_rec(1) + 2 times star and new line + 3 times star and new line
     // pattern1_rec(0) + 1 times star and new line + 2 times star and new line + 3 times star and new line
 
+// 3. Write a recursive function to calculate the sum of first n natural numbers.
 
     // sum(n) = 1 + 2 + 3... + n
     // sum(n) = 1 + 2 + 3... + n-1 + n
@@ -79,6 +69,7 @@ public class cwh_35_practice_set_on_methods {
     // sum(3) = 3 + sum(2)
     // sum(3) = 3 + 2 + sum(1)
     // sum(3) = 3 + 2 + 1
+    
     static int sumRec(int n) {
         // Base condition
         if (n == 1) {
@@ -87,7 +78,9 @@ public class cwh_35_practice_set_on_methods {
         return n + sumRec(n - 1);
     }
 
-    static int fib(int n) {
+// 5. Write a function to print the nth term of the Fibonacci series using recursion.
+
+   static int fib(int n) {
         /* if(n==1){
             return 0;
         }
@@ -100,6 +93,16 @@ public class cwh_35_practice_set_on_methods {
             return fib(n - 1) + fib(n - 2);
         }
     }
+
+// 6. Write a function to find the average of a set of numbers passed as arguments.
+
+// 7. Repeat problem 4 using Recursion.
+
+// 8. Repeat problem 2 using Recursion.
+
+// 9. Write a function to convert Celsius temperature into Fahrenheit.
+
+// 10. Repeat problem 3 using an iterative approach.
 
     public static void main(String[] args) {
         // Problem 1
