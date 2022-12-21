@@ -2,7 +2,7 @@
 
 /*
 
-Access Modifiers
+//* Access Modifiers
 
 Access Modifiers specify where a property/method is accessible. There are four types of access modifiers in java :
 
@@ -12,6 +12,7 @@ protected
 public
 
 Access Modifier	 within class	within package	 outside package   by subclass only	outside package
+
 public	             Y	            Y		          Y		          Y
 protected            Y	          	Y	          	  Y	          	  N
 Default	             Y		        Y		          N		          N
@@ -38,9 +39,10 @@ public  class CWH {
 Output :
 
 java: id has private access in Employee
-You can see that the above code produces an error that we're trying to access a private variable outside the class. So, is there any way by which we can access the private access modifiers outside the class? The answer is Yes! We can access the private access modifiers outside the class with the help of getters and setters.
 
-Getters and Setters :
+* You can see that the above code produces an error that we're trying to access a private variable outside the class. So, is there any way by which we can access the private access modifiers outside the class? The answer is Yes! We can access the private access modifiers outside the class with the help of getters and setters.
+
+//* Getters and Setters :
 
 Getter ➼   Returns the value  [accessors]
 setter ➼    Sets / updates the value  [mutators]
@@ -81,11 +83,13 @@ public  class CWH {
 
     }
 }
+
 Output :
 
 Shubham
 1
-As you can see that we've got our expected output. So, that's how we use the getters and setters method to get and set the values of private access modifiers outside the class.
+
+* As you can see that we've got our expected output. So, that's how we use the getters and setters method to get and set the values of private access modifiers outside the class.
 
 */
 
